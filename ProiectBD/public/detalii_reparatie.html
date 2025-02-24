@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalii Reparație</title>
+    <link rel="stylesheet" href="detalii_reparatie.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Detalii Reparație</h1>
+      <!--<div class="info-reparatie">
+        <p><strong>ID Reparație:</strong> <span id="id-reparatie">N/A</span></p>
+        <p><strong>Data:</strong> <span id="data-reparatie">N/A</span></p>
+        <p><strong>Status:</strong> <span id="status-reparatie">N/A</span></p>
+        <p>
+          <strong>Dispozitiv:</strong>
+          <span id="dispozitiv-reparatie">N/A</span>
+        </p>
+      </div>-->
+
+      <div class="servicii-reparatie">
+        <h2>Servicii efectuate</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Denumire Serviciu</th>
+              <th>Durată</th>
+              <th>Preț</th>
+            </tr>
+          </thead>
+          <tbody id="servicii-tabel">
+            <!-- Serviciile vor fi populate aici -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tehnicieni-reparatie">
+        <h2>Tehnicieni implicați</h2>
+        <ul id="tehnicieni-list">
+          <!-- Tehnicienii vor fi populați aici -->
+        </ul>
+      </div>
+
+      <button id="btn-inapoi">Înapoi</button>
+    </div>
+    <script src="detalii_reparatie.js"></script>
+  </body>
+</html>

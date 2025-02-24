@@ -1,0 +1,357 @@
+/* Setări generale pentru corpul paginii */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #4facfe, #8f94fb);
+}
+
+/* Containerul principal pentru meniul dashboard-ului */
+.menu-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+/* Stiluri pentru titlul principal */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #020202;
+}
+
+/* Stiluri pentru containerul butoanelor */
+.button-container {
+  display: flex;
+  flex-direction: column; /* Afișează elementele pe verticală */
+  gap: 15px; /* Spațiu între butoane */
+}
+
+/* Stiluri pentru butoane */
+.button-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  margin: 0 auto; /* Centrează butoanele */
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 80%; /* Setează o lățime uniformă pentru butoane */
+}
+
+/* Efect de hover pentru butoane */
+.button-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Stiluri pentru tabele (ex. pentru reparații finalizate) */
+#completedRepairsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#completedRepairsTable th,
+#completedRepairsTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#completedRepairsTable th {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* Stiluri pentru mesajele de feedback */
+#feedback {
+  margin-top: 15px;
+  font-size: 14px;
+  opacity: 0; /* Ascuns implicit */
+  transition: opacity 0.5s ease; /* Tranziție lină */
+}
+
+/* Stiluri pentru formular */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  text-align: left;
+  font-size: 14px;
+  color: #d7d3d3;
+}
+
+select,
+button {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.hidden {
+  display: none;
+}
+/* Stiluri pentru tabelul clienților */
+#tabel-clienti {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#tabel-clienti th,
+#tabel-clienti td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#tabel-clienti th {
+  background-color: #236ec0;
+  color: white;
+}
+
+#btn-inapoi {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#btn-inapoi:hover {
+  background-color: #0056b3;
+}
+/* clienti peste medie*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #4facfe, #8f94fb);
+}
+
+.menu-container {
+  background-color: rgba(91, 86, 86, 0.6);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #f5f2f2;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #007bff;
+  color: white;
+}
+
+td {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#finalizeRepairsSection {
+  margin: 20px;
+  padding: 10px;
+}
+
+#finalizeRepairsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#finalizeRepairsTable th,
+#finalizeRepairsTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#finalizeRepairsTable th {
+  background-color: #1d4cc2;
+  color: white;
+}
+
+#finalizeRepairsTable tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#finalizeRepairsTable tbody tr:hover {
+  background-color: #ddd;
+}
+
+button.finalize-repair {
+  padding: 5px 10px;
+  color: white;
+  background-color: #2235ad;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.finalize-repair:hover {
+  background-color: #2235ad;
+}
+
+#feedback {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+.back-button {
+  margin: 10px 0;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+/*stergere reparatii*/
+#deleteRepairsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#deleteRepairsTable th,
+#deleteRepairsTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#deleteRepairsTable th {
+  background-color: #4636f4;
+  color: white;
+}
+
+#deleteRepairsTable tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#deleteRepairsTable tbody tr:hover {
+  background-color: #ddd;
+}
+
+button.delete-repair {
+  padding: 5px 10px;
+  color: white;
+  background-color: #2300e6;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.delete-repair:hover {
+  background-color: #2c00cc;
+}
+
+.back-button {
+  margin: 10px 0;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+/*stregere tehnicieni*/
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.delete-button,
+.back-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.delete-button:hover,
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+.feedback {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}

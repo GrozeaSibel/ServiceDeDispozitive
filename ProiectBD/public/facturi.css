@@ -1,0 +1,87 @@
+/* Stil general pentru fundal */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #4facfe, #8f94fb);
+  color: #333;
+}
+
+/* Stil pentru containerul principal */
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #f0f8ff; /* Fundal ușor albăstrui */
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Stil pentru titlul principal */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #4da6ff;
+  text-shadow: 1px 1px 2px #333;
+}
+
+/* Stil pentru tabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #dcdcdc;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #4da6ff; /* Albastru deschis */
+  color: #fff;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #ffffff; /* Albăstrui pal */
+}
+
+tr:nth-child(odd) {
+  background-color: #ffffff; /* Alb */
+}
+
+/* Stil pentru butonul de detalii */
+button {
+  background-color: #4da6ff; /* Albastru */
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0073e6; /* Albastru mai închis */
+}
+
+/* Stil pentru butonul Înapoi */
+#btn-inapoi {
+  display: block;
+  margin: 20px auto 0;
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #4da6ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#btn-inapoi:hover {
+  background-color: #0073e6;
+}

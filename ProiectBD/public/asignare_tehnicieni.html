@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asignare Tehnicieni</title>
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <div class="menu-container">
+      <h1>Asignare Tehnicieni</h1>
+
+      <!-- Formular pentru asignare tehnician -->
+      <form id="assignTechnicianForm">
+        <label for="repairId">Reparație (În așteptare):</label>
+        <select id="repairId" required></select>
+
+        <label for="technicianId">Tehnician:</label>
+        <select id="technicianId" required></select>
+
+        <button type="submit">Asignare</button>
+      </form>
+
+      <div id="feedback"></div>
+
+      <!-- Tabel pentru reparații și servicii necesare -->
+      <h2>Reparații cu Servicii Necesare</h2>
+      <table id="repairsTable">
+        <thead>
+          <tr>
+            <th>ID Reparație</th>
+            <th>Dispozitiv</th>
+            <th>Status</th>
+            <th>Servicii Necesare</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Datele vor fi populate din JavaScript -->
+        </tbody>
+      </table>
+
+      <button id="backButton">Înapoi</button>
+    </div>
+
+    <script src="assign_technician.js"></script>
+  </body>
+</html>

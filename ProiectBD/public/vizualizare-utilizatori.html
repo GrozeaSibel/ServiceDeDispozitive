@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestionare Utilizatori</title>
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <div class="menu-container">
+      <h1>Gestionare Utilizatori</h1>
+      <table id="tabel-utilizatori">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Rol</th>
+            <th>Nume</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Datele utilizatorilor vor fi adăugate aici -->
+        </tbody>
+      </table>
+
+      <!-- Butoane pentru adăugare -->
+      <div class="button-container">
+        <button id="btn-adauga-client">Adaugă Client</button>
+        <button id="btn-adauga-admin">Adaugă Administrator</button>
+        <button id="btn-inapoi">Înapoi</button>
+      </div>
+    </div>
+
+    <!-- Modal pentru adăugare client -->
+    <div id="adauga-client-modal" class="modal hidden">
+      <form id="adauga-client-form">
+        <h2>Adaugă Client</h2>
+        <input
+          type="text"
+          id="username-client"
+          placeholder="Username"
+          required
+        />
+        <input
+          type="password"
+          id="parola-client"
+          placeholder="Parola"
+          required
+        />
+        <input type="text" id="nume-client" placeholder="Nume" required />
+        <input type="text" id="prenume-client" placeholder="Prenume" required />
+        <input type="text" id="adresa-client" placeholder="Adresă" />
+        <input type="tel" id="telefon-client" placeholder="Telefon" />
+        <input type="email" id="email-client" placeholder="Email" />
+        <input type="text" id="cnp-client" placeholder="CNP" required />
+        <button type="submit">Adaugă Client</button>
+        <button type="button" id="btn-inchide-client">Închide</button>
+      </form>
+    </div>
+
+    <!-- Modal pentru adăugare administrator -->
+    <div id="adauga-admin-modal" class="modal hidden">
+      <form id="adauga-admin-form">
+        <h2>Adaugă Administrator</h2>
+        <input
+          type="text"
+          id="username-admin"
+          placeholder="Username"
+          required
+        />
+        <input
+          type="password"
+          id="parola-admin"
+          placeholder="Parola"
+          required
+        />
+        <input
+          type="text"
+          id="nume_complet-admin"
+          placeholder="Nume Complet"
+          required
+        />
+        <input type="email" id="email-admin" placeholder="Email" required />
+        <input type="text" id="adresa-admin" placeholder="Adresă " />
+        <input type="tel" id="telefon-admin" placeholder="Telefon" />
+        <input type="text" id="cnp-admin" placeholder="CNP" required />
+        <button type="submit">Adaugă Administrator</button>
+        <button type="button" id="btn-inchide-admin">Închide</button>
+      </form>
+    </div>
+
+    <script src="utilizatori.js"></script>
+  </body>
+</html>

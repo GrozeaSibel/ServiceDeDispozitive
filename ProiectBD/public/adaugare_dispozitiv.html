@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adaugare Dispozitiv</title>
+    <link rel="stylesheet" href="/utilizatori_style.css" />
+  </head>
+  <body>
+    <h1>Adaugă un Dispozitiv</h1>
+    <form id="formular-dispozitiv-reparatii">
+      <h2>Adaugă Dispozitiv și Reparație</h2>
+
+      <label for="tip">Tip Dispozitiv:</label>
+      <input type="text" id="tip" name="tip" required />
+
+      <label for="marca">Marcă:</label>
+      <input type="text" id="marca" name="marca" required />
+
+      <label for="model">Model:</label>
+      <input type="text" id="model" name="model" required />
+
+      <label for="reparatii">Selectează Reparațiile:</label>
+      <select id="reparatii" name="reparatii" multiple required>
+        <option value="Inlocuire ecran">Înlocuire ecran</option>
+        <option value="Reparatie baterie">Reparație baterie</option>
+        <option value="Diagnosticare">Diagnosticare</option>
+        <option value="Upgrade SSD">Upgrade SSD</option>
+        <option value="Reparatie placa de baza">Reparație placă de bază</option>
+      </select>
+
+      <button type="submit">Adaugă Dispozitiv și Reparații</button>
+    </form>
+
+    <!-- Adaugă aici spațiul pentru mesajul de confirmare -->
+    <!--div id="confirmare-factura" style="margin-top: 20px; display: none">
+      <h3>Factura generată cu succes!</h3>
+      <p id="detalii-factura"></p>
+    </div>-->
+    <button id="btn-inapoi">Înapoi</button>
+    </div>
+    <script>
+      console.log("HTML și JavaScript sunt încărcate corect.");
+    </script>
+    <script src="/adaugare_dispozitiv.js"></script>
+  </body>
+</html>
